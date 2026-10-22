@@ -3,13 +3,14 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-  "dev": "webpack serve --mode development",
-  "build": "webpack --mode production",
-  "lint": "eslint .",
-  "test": "jest",
-  "test:watch": "jest --watch",
-  "push": "f() { npm run lint && npm test && git add -A && git commit -m \"$1\" && git push; }; f"
-},
+    "dev": "webpack serve --mode development",
+    "build": "webpack --mode production",
+    "lint": "eslint .",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "push": "f() { npm run lint && npm test && git add -A && git commit -m \"$1\" && git push; }; f",
+    "push:only": "git push"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
