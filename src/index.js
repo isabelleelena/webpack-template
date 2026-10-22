@@ -1,3 +1,4 @@
-import "./styles.css"
+import "./styles.css";
+import { greet } from "./greet";
 
-document.querySelector("#app").textContent = "Hello, webpack!";
+document.querySelector("#app").textContent = greet("webpack");

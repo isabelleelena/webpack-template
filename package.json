@@ -5,16 +5,27 @@
   "scripts": {
   "dev": "webpack serve --mode development",
   "build": "webpack --mode production",
-  "push": "f() { git add -A && git commit -m \"$1\" && git push; }; f"
+  "lint": "eslint .",
+  "test": "jest",
+  "test:watch": "jest --watch",
+  "push": "f() { npm run lint && npm test && git add -A && git commit -m \"$1\" && git push; }; f"
 },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "@babel/core": "^7.29.7",
+    "@babel/preset-env": "^7.29.7",
+    "@eslint/js": "^10.0.1",
+    "babel-jest": "^30.5.2",
     "css-loader": "^7.1.5",
+    "eslint": "^10.13.0",
+    "globals": "^17.13.0",
     "html-loader": "^5.1.0",
     "html-webpack-plugin": "^5.6.8",
+    "jest": "^30.5.2",
+    "jest-environment-jsdom": "^30.5.2",
     "style-loader": "^4.0.0",
     "webpack": "^5.112.0",
     "webpack-cli": "^7.2.3",
